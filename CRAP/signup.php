@@ -4,7 +4,7 @@ $Username = "";
 $EMail = "";
 $Password = "";
 $Lizard = "";
-$Obama = "";
+$MObama = "";
 $MKUltra = "";
 $GBush = "";
 $DATABASE_HOST = 'localhost:8889';
@@ -16,7 +16,7 @@ $db = mysqli_connect($DATABASE_HOST,$DATABASE_USER, $DATABASE_PASS, 'flat_earth'
 
 if (isset($_POST['reg_user'])) {
     $Username = mysqli_real_escape_string($db, $_POST['username']);
-    #echo $Username;
+    echo $Username;
     $checkUsrName = "SELECT * FROM users WHERE Username='$Username'";
     $checkUsrQuery = mysqli_query($db, $checkUsrName);
     $test = mysqli_fetch_assoc($checkUsrQuery);
@@ -25,22 +25,22 @@ if (isset($_POST['reg_user'])) {
     $Password = mysqli_real_escape_string($db, $_POST['password']);
     $Lizard = mysqli_real_escape_string($db, $_POST['Lizard']);;
     echo $Lizard;
-    $Obama = mysqli_real_escape_string($db, $_POST['Obama']);;
+    $MObama = mysqli_real_escape_string($db, $_POST['MObama']);;
     $MKUltra = mysqli_real_escape_string($db, $_POST['MKUltra']);;
     $GBush = mysqli_real_escape_string($db, $_POST['GBush']);;
     //print_r($_POST);
     //echo $_SESSION[0];
     if ($test['Username'] != $Username && $Username && $EMail && $Password) {
-      $query = "INSERT INTO users (`Username`, `Password`, `E-Mail`, `Lizard`, `Obama`, `MK Ultra`, `George Bush`) 
-  			    VALUES('$Username', '$Password', '$EMail', '$Lizard', '$Obama', '$MKUltra', '$GBush')";
+      $query = "INSERT INTO users (`Username`, `Password`, `E-Mail`, `Lizard`, `Michael Obama`, `MK Ultra`, `George Bush`) 
+  			    VALUES('$Username', '$Password', '$EMail', '$Lizard', '$MObama', '$MKUltra', '$GBush')";
   	  mysqli_query($db, $query);
   	  $_SESSION['username'] = $Username;
       
       $_SESSION['success'] = "You are now logged in";
-      $_SESSION['theories'] = array('Lizard' => $Lizard, 'Obama' => $Obama, 'MKUltra' => $MKUltra, 'GBush' => $GBush);
+      $_SESSION['theories'] = array('Lizard' => $Lizard, 'MObama' => $MObama, 'MKUltra' => $MKUltra, 'GBush' => $GBush);
       print_r($_SESSION['theories']);
-      header('location: index.php');
-      //header('login.php');
+      //header('location: index.php');
+      header('location: index_logged_in.php');
       exit();
       
     } else {
