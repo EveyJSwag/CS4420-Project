@@ -7,12 +7,12 @@ $Lizard = "";
 $Obama = "";
 $MKUltra = "";
 $GBush = "";
-$DATABASE_HOST = 'localhost:8889';
-$DATABASE_USER = 'root';
-$DATABASE_PASS = 'root';
-$DATABASE_NAME = 'flatearth';
-$db = mysqli_connect($DATABASE_HOST,$DATABASE_USER, $DATABASE_PASS, 'flat_earth');
 
+$DATABASE_HOST = 'localhost:3306';
+$DATABASE_USER = 'group6';
+$DATABASE_PASS = 'STUgroup6';
+$DATABASE_NAME = 'group6';
+$db = mysqli_connect($DATABASE_HOST,$DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 
 if (isset($_POST['reg_user'])) {
     $Username = mysqli_real_escape_string($db, $_POST['username']);
