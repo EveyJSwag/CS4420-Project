@@ -4,9 +4,6 @@ $Username = "";
 $EMail = "";
 $Password = "";
 $Lizard = "";
-$Obama = "";
-$MKUltra = "";
-$GBush = "";
 
 $DATABASE_HOST = 'localhost:3306';
 $DATABASE_USER = 'group6';
