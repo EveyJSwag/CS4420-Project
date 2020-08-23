@@ -30,7 +30,7 @@
 <div class="container">
     <div class="jumbotron">
 
-        <h1 align="center"> <div class="betterFont">WELCOME BACK TO OUR SOCIETY OF WOKENESS </div></h1>
+        <h1 align="center"> <div class="betterFont">WELCOME BACK TO OUR SOCIETY</div></h1>
         <h2> <p align="center"></p> </h2>
         <h6 align="center"> </h6>
     </div>
