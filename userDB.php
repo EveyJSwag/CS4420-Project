@@ -25,9 +25,6 @@ if (isset($_POST['reg_user'])){
     } else {
         $_SESSION['username'] = $Username;
         $Lizard = $user['Lizard'];
-        $Obama = $user['Obama'];
-        $MKUltra = $user['MK Ultra'];
-        $GBush = $user['George Bush'];
         $_SESSION['theories'] = array('Lizard' => $Lizard, 'Obama' => $Obama, 'MKUltra' => $MKUltra, 'GBush' => $GBush);
         header('location: index.php');
         exit();
