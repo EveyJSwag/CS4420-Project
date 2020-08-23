@@ -64,9 +64,6 @@
         <div class="betterFont">
           <br> Other True Facts: 
           <br> Lizard People <input type="checkbox" name="Lizard" value="Lizard">
-          <br> Obama <input type="checkbox" name="Obama" value="Obama">
-          <br> MK Ultra <input type="checkbox" name="MKUltra" value="MKUltra">
-          <br> George Bush: FISH PEOPLE?!? <input type="checkbox" name="GBush" value="GBush">
           <br> <br> <input type="submit" class="btn btn-primary btn-lg" name="reg_user"> 
           <button type="submit" class="btn btn-primary btn-lg" formaction="index.php"> Become Back Home </button>
         </div>
