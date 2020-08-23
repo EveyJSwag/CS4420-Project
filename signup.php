@@ -4,9 +4,7 @@ $Username = "";
 $EMail = "";
 $Password = "";
 $Lizard = "";
-$Obama = "";
-$MKUltra = "";
-$GBush = "";
+
 
 $DATABASE_HOST = 'localhost:3306';
 $DATABASE_USER = 'group6';
@@ -25,19 +23,14 @@ if (isset($_POST['reg_user'])) {
     $Password = mysqli_real_escape_string($db, $_POST['password']);
     $Lizard = mysqli_real_escape_string($db, $_POST['Lizard']);;
     echo $Lizard;
-    $Obama = mysqli_real_escape_string($db, $_POST['Obama']);;
-    $MKUltra = mysqli_real_escape_string($db, $_POST['MKUltra']);;
-    $GBush = mysqli_real_escape_string($db, $_POST['GBush']);;
-    //print_r($_POST);
-    //echo $_SESSION[0];
     if ($test['Username'] != $Username && $Username && $EMail && $Password) {
-      $query = "INSERT INTO users (`Username`, `Password`, `E-Mail`, `Lizard`, `Obama`, `MK Ultra`, `George Bush`) 
-  			    VALUES('$Username', '$Password', '$EMail', '$Lizard', '$Obama', '$MKUltra', '$GBush')";
+      $query = "INSERT INTO users (`Username`, `Password`, `E-Mail`, `Lizard`) 
+  			    VALUES('$Username', '$Password', '$EMail', '$Lizard')";
   	  mysqli_query($db, $query);
   	  $_SESSION['username'] = $Username;
       
       $_SESSION['success'] = "You are now logged in";
-      $_SESSION['theories'] = array('Lizard' => $Lizard, 'Obama' => $Obama, 'MKUltra' => $MKUltra, 'GBush' => $GBush);
+      $_SESSION['theories'] = array('Lizard' => $Lizard);
       print_r($_SESSION['theories']);
       header('location: index.php');
       //header('login.php');
