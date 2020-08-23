@@ -22,7 +22,7 @@ if (isset($_POST['reg_user'])){
     } else {
         $_SESSION['username'] = $Username;
         $Lizard = $user['Lizard'];
-        $_SESSION['theories'] = array('Lizard' => $Lizard, 'Obama' => $Obama, 'MKUltra' => $MKUltra, 'GBush' => $GBush);
+        $_SESSION['theories'] = array('Lizard' => $Lizard);
         header('location: index.php');
         exit();
     }
