@@ -94,9 +94,9 @@ body {
 
 <div class="container">
     <div class="jumbotron">
-        <h1 align="center"> FLAT EARTH SOCIETY </h1>
+        <h1 align="center"> SOCIETY OF UCCS </h1>
         <h2> <p align="center">of Colorado Springs </p> </h2>
-        <h6 align="center"> WOKENING PEOPLE SINCE 2019 </h6>
+        <h6 align="center"> WAKING PEOPLE SINCE 2019 </h6>
     </div>
 </div>
 
@@ -126,7 +126,7 @@ body {
     </em> </h5>
     <?php endif ?>
 <?php endif; ?>
-<p align="center"><img src="flatearth2.jpg" class="img-circle" style="height:400px;width:650px;"> </p>
+<p align="center"><img src="####.jpg" class="img-circle" style="height:400px;width:650px;"> </p>
 <h2><p class="lead" align="center">Become Woke</p></h2>
 <h6 class="text-danger" align="center"> <strong>DISCLAIMER:</strong> The individual pictured above is, despite our best efforts, in no way, shape or form affliated with the flat earth society of colorado springs </h3> 
 <br>
