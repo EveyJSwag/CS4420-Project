@@ -37,10 +37,10 @@ if(isset($_POST["sendEmail"])){
                 $mail->Port = 465;            
                 $mail->SMTPAuth = true;  
                 //$mail->SMTPDebug = 4;
-                $mail->Username = 'flatearthgod420@gmail.com';                
-                $mail->Password = 'flatflat321'; 
+                $mail->Username = '######@gmail.com';                
+                $mail->Password = '######'; 
                 $mail->SMTPSecure = 'ssl'; 
-                $mail->From = 'flatearthgod420@gmail.com';
+                $mail->From = '######@gmail.com';
                 $mail->FromName = 'Flatty Boy';
                 $mail->AddAddress($EMailForget);
                 $mail->IsHTML(true); 
